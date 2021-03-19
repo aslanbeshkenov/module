@@ -1,7 +1,7 @@
 import { formatError } from "./common.js";
 import { diffDates, diffToHtml } from "./diffDates.js";
 
-const dateCalcForm = document.getElementById("datecalc");
+export const dateCalcForm = document.getElementById("datecalc");
 const dateCalcResult = document.getElementById("datecalc_result");
 
 dateCalcForm.addEventListener("submit", handleCalcDate);

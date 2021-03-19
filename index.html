@@ -11,19 +11,38 @@
 
 
 <body>
-    <form id="datecalc">
+    <div>
         <h3>Калькулятор дат</h3>
-        <label>
-            <strong>Первая дата:</strong>
-            <input type="date" name="firstDate">
-        </label>
-        <label>
-            <strong>Вторая дата:</strong>
-            <input type="date" name="secondDate">
-        </label>
-        <button type="submit">Рассчитать</button>
-        <p id="datecalc_result"></p>
-    </form>
+        <button id="datecalc_hide">Показать
+        </button>
+        <form id="datecalc">
+            <label>
+                <strong>Первая дата:</strong>
+                <input type="date" name="firstDate">
+            </label>
+            <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" name="secondDate">
+            </label>
+            <button type="submit">Рассчитать</button>
+            <p id="datecalc_result"></p>
+        </form>
+    </div>
+
+    <div>
+        <h3>Таймер</h3>
+        <button id="timer_hide">Показать</button>
+        <form id="timer">
+            <label>
+                <strong>Введите время в секундах:</strong>
+                <input type="text" id="timer_interval">
+                <button id="timer_start">Старт</button>
+                <button id="timer_stop" disabled>Стоп</button>
+                <p id="timer_result"></p>
+            </label>
+        </form>
+    </div>
+
 </body>
 
 </html>
